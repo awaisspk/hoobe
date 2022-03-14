@@ -61,7 +61,9 @@ export const Tab1 = () => {
       <Avatar />
       <div>
         <h3 className="flex items-center space-x-4">
-          <span className="text-2xl ml-9 font-bold text-gray-900">Tara</span>
+          <span className="text-2xl ml-9 font-bold text-gray-900">
+            Jonas Muthoni
+          </span>
           <PenIcon className="stroke-gray-500 w-7  self-start" />
         </h3>
       </div>

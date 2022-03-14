@@ -19,7 +19,7 @@ const Card = ({ imageUrl }: { imageUrl: string }) => {
       <div className="w-full relative h-full aspect-w-16 aspect-h-9 rounded-xl overflow-hidden">
         <Image src={imageUrl} layout="fill" alt="" className="select-none" />
       </div>
-      <div className="bg-white absolute -top-2 right-0 md:-right-3 shadow-lg w-8 h-8 rounded-full flex items-center justify-center">
+      <div className="bg-white absolute -top-2 right-0 md:-right-3 shadow-lg w-8 h-8 rounded-full flex items-center justify-center cursor-grab">
         <DragIcon className="fill-white stroke-black w-5" />
       </div>
     </div>

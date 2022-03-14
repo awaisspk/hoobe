@@ -7,10 +7,10 @@ import { PenIcon } from '../icons';
 export const Avatar = () => {
   return (
     <div className="relative">
-      <AvatarPrimitive.Root className="bg-blue-500 w-[70px] md:w-[100px] h-[70px] md:h-[100px]">
+      <AvatarPrimitive.Root className="rounded-full overflow-hidden w-[70px] md:w-[100px] h-[70px] md:h-[100px]">
         <AvatarPrimitive.Image
-          src="/assets/images/avatar.png"
-          className="w-[70px] md:w-[100px]"
+          src="/assets/images/profile.jpeg"
+          className="rounded-full object-cover w-[70px] md:w-[100px] h-[70px] md:h-[100px]"
         ></AvatarPrimitive.Image>
         <AvatarPrimitive.Fallback
           delayMs={600}
