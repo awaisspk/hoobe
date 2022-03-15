@@ -1,6 +1,12 @@
+// eslint-disable-next-line import/no-extraneous-dependencies
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
   theme: {
+    fontFamily: {
+      primary: ['Proxima Nova', ...defaultTheme.fontFamily.sans],
+    },
     fontSize: {
       xs: '0.75rem',
       sm: '0.875rem',

@@ -1,5 +1,17 @@
 @tailwind base;
 
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('/Proxima Nova Font.otf');
+  font-style: normal;
+}
+
+@layer base {
+  html {
+    font-family: Proxima Nova, system-ui, sans-serif;
+  }
+}
+
 @tailwind components;
 
 @tailwind utilities;

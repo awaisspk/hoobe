@@ -7,7 +7,15 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang={AppConfig.locale}>
-        <Head />
+        <Head>
+          <link
+            rel="preload"
+            href="/Proxima Nova Font.otf"
+            as="font"
+            type="font/otf"
+            crossOrigin="anonymous"
+          />
+        </Head>
         <body>
           <Main />
           <NextScript />
