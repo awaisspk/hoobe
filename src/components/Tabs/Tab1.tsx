@@ -34,12 +34,9 @@ const ScoreInfo = () => {
         {scoreInfoData.map((info, i) => (
           <div
             key={info.name + info.value}
-            className={cx(
-              'flex flex-col justify-center items-center space-y-3',
-              {
-                'border border-l-gray-400': i !== 0,
-              }
-            )}
+            className={cx('flex flex-col justify-center items-center', {
+              'border border-l-gray-400': i !== 0,
+            })}
           >
             <span className="text-gray-600 text-xs sm:text-sm text-center">
               {info.name}

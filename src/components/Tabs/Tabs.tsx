@@ -73,44 +73,44 @@ export const MainTabs = () => {
           </Tabs.Trigger>
         </Tabs.List>
 
-        <AnimatePresence>
-          {active === 'tab1' && (
-            <Tabs.Content
-              asChild
-              value="tab1"
-              className="w-full flex justify-center outline-none"
-            >
+        <AnimatePresence exitBeforeEnter={true}>
+          <Tabs.Content
+            asChild
+            value="tab1"
+            className="w-full flex justify-center outline-none"
+          >
+            {active === 'tab1' && (
               <motion.div
                 key="tab1"
                 className="w-full"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0 }}
+                exit={{ opacity: 0, y: -200 }}
                 transition={{ type: 'spring' }}
               >
                 <Tab1 />
               </motion.div>
-            </Tabs.Content>
-          )}
+            )}
+          </Tabs.Content>
 
-          {active === 'tab2' && (
-            <Tabs.Content
-              asChild
-              value="tab2"
-              className="w-full flex justify-center outline-none"
-            >
+          <Tabs.Content
+            asChild
+            value="tab2"
+            className="w-full flex justify-center outline-none"
+          >
+            {active === 'tab2' && (
               <motion.div
                 key="tab2"
                 className="w-full"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0 }}
+                exit={{ y: -200 }}
                 transition={{ type: 'spring' }}
               >
                 <Tab2 />
               </motion.div>
-            </Tabs.Content>
-          )}
+            )}
+          </Tabs.Content>
         </AnimatePresence>
       </Tabs.Root>
     </div>
