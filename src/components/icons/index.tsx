@@ -62,7 +62,6 @@ export const AppleIcon = (props: SVGProps<SVGSVGElement>) => (
 export const TwitterIcon = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    className="icon icon-tabler icon-tabler-brand-twitter"
     width={32}
     height={32}
     viewBox="0 0 24 24"
@@ -81,7 +80,6 @@ export const TwitterIcon = (props: SVGProps<SVGSVGElement>) => (
 export const LinkIcon = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    className="icon icon-tabler icon-tabler-link"
     width={32}
     height={32}
     viewBox="0 0 24 24"
@@ -101,7 +99,6 @@ export const LinkIcon = (props: SVGProps<SVGSVGElement>) => (
 export const RedditIcon = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    className="icon icon-tabler icon-tabler-brand-reddit"
     width={32}
     height={32}
     viewBox="0 0 24 24"
@@ -124,7 +121,6 @@ export const RedditIcon = (props: SVGProps<SVGSVGElement>) => (
 export const PlusIcon = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    className="icon icon-tabler icon-tabler-plus"
     width={32}
     height={32}
     viewBox="0 0 24 24"
@@ -143,7 +139,6 @@ export const PlusIcon = (props: SVGProps<SVGSVGElement>) => (
 export const DragIcon = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    className="icon icon-tabler icon-tabler-grid-dots"
     width={25}
     height={25}
     viewBox="4 0 24 24"
@@ -166,7 +161,6 @@ export const DragIcon = (props: SVGProps<SVGSVGElement>) => (
 export const ChevronRight = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    className="icon icon-tabler icon-tabler-chevron-right"
     width={32}
     height={32}
     viewBox="0 0 24 24"
@@ -217,6 +211,67 @@ export const EyeIcon = (props: SVGProps<SVGSVGElement>) => {
       <path d="M0 0h24v24H0z" stroke="none" />
       <circle cx={12} cy={12} r={2} />
       <path d="M22 12c-2.667 4.667-6 7-10 7s-7.333-2.333-10-7c2.667-4.667 6-7 10-7s7.333 2.333 10 7" />
+    </svg>
+  );
+};
+
+export const CloseIcon = (props: SVGProps<SVGSVGElement>) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={44}
+      height={44}
+      viewBox="0 0 24 24"
+      strokeWidth={1.5}
+      stroke="#2c3e50"
+      fill="none"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      {...props}
+    >
+      <path d="M0 0h24v24H0z" stroke="none" />
+      <path d="M18 6 6 18M6 6l12 12" />
+    </svg>
+  );
+};
+
+export const MenuIcon = (props: SVGProps<SVGSVGElement>) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={44}
+      height={44}
+      viewBox="0 0 24 24"
+      strokeWidth={1.5}
+      stroke="#2c3e50"
+      fill="none"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      {...props}
+    >
+      <path d="M0 0h24v24H0z" stroke="none" />
+      <path d="M4 6h16M4 12h16M4 18h16" />
+    </svg>
+  );
+};
+
+export const ShareFileIcon = (props: SVGProps<SVGSVGElement>) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className="icon icon-tabler icon-tabler-upload"
+      width={44}
+      height={44}
+      viewBox="0 0 24 24"
+      strokeWidth={1.5}
+      stroke="#2c3e50"
+      fill="none"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      {...props}
+    >
+      <path d="M0 0h24v24H0z" stroke="none" />
+      <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2M7 9l5-5 5 5M12 4v12" />
     </svg>
   );
 };
