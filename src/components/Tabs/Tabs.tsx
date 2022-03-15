@@ -75,38 +75,41 @@ export const MainTabs = () => {
 
         <AnimatePresence>
           {active === 'tab1' && (
-            <motion.div
-              key="tab1"
-              className="w-full"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ type: 'spring' }}
+            <Tabs.Content
+              asChild
+              value="tab1"
+              className="w-full flex justify-center outline-none"
             >
-              <Tabs.Content
-                value="tab1"
-                className="w-full flex justify-center outline-none"
+              <motion.div
+                key="tab1"
+                className="w-full"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0 }}
+                transition={{ type: 'spring' }}
               >
                 <Tab1 />
-              </Tabs.Content>
-            </motion.div>
+              </motion.div>
+            </Tabs.Content>
           )}
+
           {active === 'tab2' && (
-            <motion.div
-              key="tab2"
-              className="w-full"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ type: 'spring' }}
+            <Tabs.Content
+              asChild
+              value="tab2"
+              className="w-full flex justify-center outline-none"
             >
-              <Tabs.Content
-                value="tab2"
-                className="w-full flex justify-center outline-none"
+              <motion.div
+                key="tab2"
+                className="w-full"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0 }}
+                transition={{ type: 'spring' }}
               >
                 <Tab2 />
-              </Tabs.Content>
-            </motion.div>
+              </motion.div>
+            </Tabs.Content>
           )}
         </AnimatePresence>
       </Tabs.Root>
