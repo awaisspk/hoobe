@@ -16,14 +16,14 @@
   "dependencies": {
     "@radix-ui/react-avatar": "^0.1.4",
     "@radix-ui/react-tabs": "^0.1.5",
+    "@tailwindcss/aspect-ratio": "^0.4.0",
     "classnames": "^2.3.1",
     "framer-motion": "^6.2.8",
     "next": "^12.1.0",
     "next-seo": "^5.1.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "styled-jsx-plugin-postcss": "^4.0.1",
-    "@tailwindcss/aspect-ratio": "^0.4.0"
+    "styled-jsx-plugin-postcss": "^4.0.1"
   },
   "devDependencies": {
     "@next/bundle-analyzer": "^12.1.0",

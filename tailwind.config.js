@@ -39,6 +39,12 @@ module.exports = {
           900: '#2a4365',
         },
       },
+      gridTemplateRows: {
+        layout: '1fr max-content',
+      },
+      boxShadow: {
+        '3xl': '0px 0px 34px -1px rgba(0,0,0,0.1)',
+      },
     },
   },
   plugins: [
