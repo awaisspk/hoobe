@@ -11,7 +11,7 @@ export const Wrapper = ({ children }: { children: ReactNode }) => {
   return (
     <section
       className={cx(
-        'min-w-0 w-[min(650px,100%)] min-h-screen py-5 px-4',
+        'min-w-0 w-[min(850px,100%)] min-h-screen py-5 px-4',
         'bg-white shadow-2xl shadow-gray-500/30 rounded-[2rem]',
         'flex flex-col items-center space-y-5'
       )}
@@ -66,7 +66,7 @@ export const Tab1 = () => {
       </div>
       <ScoreInfo />
       <SocialLinks />
-      <div className="w-[min(500px,100%-20px)] mx-auto">
+      <div className="w-[90%] mx-auto">
         <h3 className="text-xl  text-gray-900 font-bold ">links 4 of 25</h3>
         <div className="flex items-center justify-between my-7 select-none gap-1 outline-1 p-2 rounded-full outline w-[min(300px,100%)] mx-auto">
           <div className="flex items-center space-x-1">

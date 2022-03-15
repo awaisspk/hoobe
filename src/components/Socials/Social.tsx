@@ -55,7 +55,7 @@ export const SocialLinks = () => {
                 {<link.icon className="stroke-gray-200 w-7 sm:w-8" />}
               </SocialIcon>
 
-              <div className="absolute bg-white w-5 h-5 flex items-center justify-center rounded-lg -top-1  -right-2 sm:right-0 drop-shadow-2xl shadow-gray-600 cursor-grab">
+              <div className="absolute bg-white w-5 h-5 flex items-center justify-center rounded-lg -top-1  -right-2 sm:right-0 shadow-[0px_10px_23px_16px_rgba(0,0,0,0.1)] cursor-grab">
                 <DragIcon className="w-3 h-3 stroke-gray-900" />
               </div>
             </Reorder.Item>

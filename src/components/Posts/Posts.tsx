@@ -38,7 +38,7 @@ const Card = ({ imageUrl }: ICard) => {
           />
         </div>
         <div
-          className="bg-white absolute -top-2 right-0 md:-right-3 shadow-lg w-8 h-8 rounded-full flex items-center justify-center cursor-grab"
+          className="bg-white absolute -top-2 right-0 md:-right-3 shadow-[0px_10px_23px_16px_rgba(0,0,0,0.1)]  w-8 h-8 rounded-full flex items-center justify-center cursor-grab"
           onPointerDown={(e) => controls.start(e)}
         >
           <DragIcon className="fill-white stroke-black w-5" />

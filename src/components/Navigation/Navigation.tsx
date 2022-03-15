@@ -67,7 +67,7 @@ export const Navigation = ({ setIsOpen }: INavigation) => {
             <Avatar showPen={false} />
             <div>
               <span className="md:text-lg -ml-6 text-gray-900 font-bold">
-                hoo.be/muthoni
+                tappie.com/jonas
               </span>
             </div>
           </div>

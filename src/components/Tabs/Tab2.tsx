@@ -104,7 +104,7 @@ export const Tab2 = () => {
     <Wrapper>
       <Avatar showPen={false} />
       <SocialLinks />
-      <div className="w-[min(500px,100%-20px)] mx-auto space-y-3">
+      <div className="w-[90%] mx-auto space-y-3">
         {images.map((image, i) => (
           <Card key={i} {...image} />
         ))}
