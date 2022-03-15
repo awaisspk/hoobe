@@ -1,5 +1,4 @@
-import Image from 'next/image';
-
+import { Header } from '@/components/header';
 import { Main } from '@/components/Main';
 import { MainTabs } from '@/components/Tabs';
 import { Meta } from '@/layout/Meta';
@@ -14,11 +13,9 @@ const Index = () => {
         />
       }
     >
-      <div className="mt-5 w-full px-1">
+      <Header />
+      <div className="mt-10 md:-mt-10">
         <MainTabs />
-        <div className="relative h-20 w-40 mx-auto mt-10 mb-5">
-          <Image src="/assets/tappie.jpeg" layout="fill" alt="" />
-        </div>
       </div>
     </Main>
   );
